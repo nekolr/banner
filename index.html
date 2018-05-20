@@ -53,6 +53,67 @@
 <script type="text/javascript" src="js/live2d.js"></script>
 <script type="text/javascript">
 
+	const ids = ['416700390', '33469247', '28167020', '786262', '28563164'];
+
+	let audios = [{
+		name: 'ちいさな冒険者',
+		artist: 'ハンバート ハンバート',
+		url: 'https://nekolr.com/avalon/audio/ちいさな冒険者.mp3',
+		cover: 'https://p1.music.126.net/uI6Ut8Xo81KYGIsw2WrH5Q==/3250156374772071.jpg?param=130y130',
+		lrc: "[00:16]転んで擦りむいたとこ\n[00:21]\n[00:22]血が滲んで染みるけれど\n[00:28]\n[00:29]へっちゃらさ すぐ治るから\n[00:33]\n[00:34]明日には瘡蓋できる\n[00:40]\n[00:41]今日もうまだ馬鹿にされたよ\n[00:46]\n[00:47]恥ずかしいし悔しいけれど\n[00:52]\n[00:53]へっちゃらさ覚えでおけよ\n[00:57]\n[00:58]今に笑い返してやる\n[01:04]\n[01:05]岬から舟を出せば\n[01:10]\n[01:11]風を受けほら膨らむ\n[01:16]\n[01:17]僕は今 土を離れ\n[01:22]\n[01:23]真夏の海を股にかける\n[01:29]\n[01:48]\n[01:54]喧嘩して殴られたとこ\n[01:59]\n[02:00]紫色あざになった\n[02:05]\n[02:06]へっちゃらさ今日のところは\n[02:11]\n[02:12]負けたことにしっといってやる\n[02:17]\n[02:18]丘に立ち手を広げた\n[02:23]\n[02:24]風を待ち羽ばたくのさ\n[02:29]\n[02:30]僕は今土を離れ\n[02:35]\n[02:36]大空渡る一羽の鳥\n[02:41]\n[02:42]南から風は吹いて\n[02:47]\n[02:48]急に雨降り始めた\n[02:53]\n[02:54]春はすぐ隣にいる\n[03:59]\n[03:30]洗濯物取りこまなくちゃ\n[03:06]\n[03:18]\n[03:22]\n",
+		theme: '#ff9e74'
+	},
+	{
+		name: '原風景',
+		artist: 'まももP',
+		url: 'https://nekolr.com/avalon/audio/原風景.mp3',
+		cover: 'https://p1.music.126.net/ct9bs4VXR1mrbVRsX9iboA==/3372202162443903.jpg?param=130y130',
+		lrc: '[00:25.38]月明かりに照らされ\n[00:29.58]向かう先は  見知らぬ町\n[00:36.68]白い息を吐き出し\n[00:40.87]かじかむ手を  擦った\n[01:11.07]覆う雪を掻きわけ\n[01:15.35]見つけた種  日を灯せば\n[01:22.33]隠されてた想いが\n[01:26.63]ぽつり  ぽつり  彩る\n[01:34.04]緩い丘  超え\n[01:38.60]見下ろす景色は\n[01:43.93]空に光った  どんな星より\n[01:49.72]優しさ満ちる街明かり\n[01:56.08]人々の生きた証が\n[02:01.10]そこには集い  眠る\n[02:06.88]流れ行く日々  重ねた想い\n[02:12.52]あなたの元へ  届くなら\n[02:19.04]残る灯も  離れてく灯も\n[02:24.00]すべて繋いで\n[02:26.93]雪と  解けてゆく\n[02:53.82]月明かりに照らされ\n[02:58.12]向かう先は  馴染みの町\n[03:05.10]溢れそうな想いは\n[03:09.45]雪と共に  綴った\n[03:16.99]長い時  超え\n[03:21.58]見下ろす景色は\n[03:26.89]空に光った  どんな星より\n[03:32.64]優しさ満ちる街明かり\n[03:47.11]どれだけの季節超えても\n[03:52.04]いつでもそこに灯る\n[03:57.83]さよならをする  その痛みさえ\n[04:03.53]僕らを形作るなら\n[04:09.92]紡がれた物語は今\n[04:15.01]終わりを迎え\n[04:17.97]春へ  解けてゆく\n[04:31.86]帰ろう  ほら\n[04:37.85]町は  今日も…\n',
+		theme: '#f7f6f1'
+	},
+	{
+		name: '陽だまり道',
+		artist: '水谷広実',
+		url: 'https://nekolr.com/avalon/audio/陽だまり道.mp3',
+		cover: 'https://p1.music.126.net/D2uWvpimbih70JZgNdRgmg==/5823013580839602.jpg?param=130y130',
+		theme: '#75ceec'
+	},
+	{
+		name: 'you',
+		artist: 'M.Graveyard',
+		url: 'https://nekolr.com/avalon/audio/you.mp3',
+		cover: 'https://p1.music.126.net/v22kNtMro7CvzoiCYJ4zjQ==/3315027558990599.jpg?param=130y130',
+		theme: '#f6f6dc'
+	},
+	{
+		name: 'A LETTER ＜nZK Ver.＞',
+		artist: 'Cyua',
+		url: 'https://nekolr.com/avalon/audio/A_LETTER.mp3',
+		cover: 'https://p1.music.126.net/cGpQM5tQzJQJfAAfjgKFWA==/6023124697347234.jpg?param=130y130',
+		lrc: "[00:20.500]All my friends have gone away\n[00:24.110]I need myself to sing this song\n[00:28.050]But you always passed away\n[00:32.020]But It seems to be okay\n[00:36.550]All my wish and powers\n[00:40.070]They would take me to the gate\n[00:44.000]Should I really find my problem ?\n[00:48.000]Do I really want to know about ?\n[00:52.080]I'm writing a letter for me\n[00:55.990]Is there anything I would say ?\n[01:02.560]I don't have to throw my life away\n[01:10.530]Everything goes wrong to turn into the way of life\n[01:18.470]This could take so long to find the way\n[01:26.040]All those people cry in vain\n[01:30.020]Now I see the light in pain\n[01:34.030]I can find the way of love...\n[01:40.620]\n[02:30.650]You don't have to throw your life away\n[02:38.550]Everything goes wrong to turn into the way of life\n[02:46.560]This could take so long to find the way\n[02:54.070]All those people cry in vain\n[02:58.000]Now you see the light in pain\n[03:03.610]\n[03:20.510]Say goodbye to the perfect sky\n[03:27.030]But it's your love can be the real life line\n[03:38.860]\n[100:39.990]\n",
+		theme: '#161616'
+	}];
+
+
+	(function loadAudios(ids) {
+		const url = 'https://api.imjad.cn/cloudmusic/?type=song&br=128000&id=';
+		ids.forEach(function(value, index){
+			$.ajax({
+				url: url + value,
+				type: 'get',
+				async: true,
+				dataType: 'json',
+				timeout: 3000,
+				success: function(msg) {
+					audios[index].url = msg.data[0].url;
+				},
+				error: function() {
+
+				}
+			})
+		});
+	})((ids));
+
 	const banner = new FragmentBanner({
 		container : "#banner1",//选择容器 必选
 		imgs : ['https://www.tuchuang001.com/images/2018/05/20/7.jpg','https://www.tuchuang001.com/images/2018/05/20/6.jpg','https://www.tuchuang001.com/images/2018/05/20/5.jpg','https://www.tuchuang001.com/images/2018/05/20/4.jpg','https://www.tuchuang001.com/images/2018/05/20/3.jpg','https://www.tuchuang001.com/images/2018/05/20/1.jpg','https://www.tuchuang001.com/images/2018/05/20/2.jpg'],//图片集合 必选
@@ -84,44 +145,7 @@
 		container: document.getElementById('aplayer'),
 		fixed: true,
 		lrcType: 1,
-		audio: [{
-			name: 'ちいさな冒険者',
-			artist: 'ハンバート ハンバート',
-			url: 'https://nekolr.com/avalon/audio/ちいさな冒険者.mp3',
-			cover: 'https://p1.music.126.net/uI6Ut8Xo81KYGIsw2WrH5Q==/3250156374772071.jpg?param=130y130',
-			lrc: "[00:16]転んで擦りむいたとこ\n[00:21]\n[00:22]血が滲んで染みるけれど\n[00:28]\n[00:29]へっちゃらさ すぐ治るから\n[00:33]\n[00:34]明日には瘡蓋できる\n[00:40]\n[00:41]今日もうまだ馬鹿にされたよ\n[00:46]\n[00:47]恥ずかしいし悔しいけれど\n[00:52]\n[00:53]へっちゃらさ覚えでおけよ\n[00:57]\n[00:58]今に笑い返してやる\n[01:04]\n[01:05]岬から舟を出せば\n[01:10]\n[01:11]風を受けほら膨らむ\n[01:16]\n[01:17]僕は今 土を離れ\n[01:22]\n[01:23]真夏の海を股にかける\n[01:29]\n[01:48]\n[01:54]喧嘩して殴られたとこ\n[01:59]\n[02:00]紫色あざになった\n[02:05]\n[02:06]へっちゃらさ今日のところは\n[02:11]\n[02:12]負けたことにしっといってやる\n[02:17]\n[02:18]丘に立ち手を広げた\n[02:23]\n[02:24]風を待ち羽ばたくのさ\n[02:29]\n[02:30]僕は今土を離れ\n[02:35]\n[02:36]大空渡る一羽の鳥\n[02:41]\n[02:42]南から風は吹いて\n[02:47]\n[02:48]急に雨降り始めた\n[02:53]\n[02:54]春はすぐ隣にいる\n[03:59]\n[03:30]洗濯物取りこまなくちゃ\n[03:06]\n[03:18]\n[03:22]\n",
-			theme: '#ff9e74'
-		},
-		{
-			name: '原風景',
-			artist: 'まももP',
-			url: 'https://nekolr.com/avalon/audio/原風景.mp3',
-			cover: 'https://p1.music.126.net/ct9bs4VXR1mrbVRsX9iboA==/3372202162443903.jpg?param=130y130',
-			lrc: '[00:25.38]月明かりに照らされ\n[00:29.58]向かう先は  見知らぬ町\n[00:36.68]白い息を吐き出し\n[00:40.87]かじかむ手を  擦った\n[01:11.07]覆う雪を掻きわけ\n[01:15.35]見つけた種  日を灯せば\n[01:22.33]隠されてた想いが\n[01:26.63]ぽつり  ぽつり  彩る\n[01:34.04]緩い丘  超え\n[01:38.60]見下ろす景色は\n[01:43.93]空に光った  どんな星より\n[01:49.72]優しさ満ちる街明かり\n[01:56.08]人々の生きた証が\n[02:01.10]そこには集い  眠る\n[02:06.88]流れ行く日々  重ねた想い\n[02:12.52]あなたの元へ  届くなら\n[02:19.04]残る灯も  離れてく灯も\n[02:24.00]すべて繋いで\n[02:26.93]雪と  解けてゆく\n[02:53.82]月明かりに照らされ\n[02:58.12]向かう先は  馴染みの町\n[03:05.10]溢れそうな想いは\n[03:09.45]雪と共に  綴った\n[03:16.99]長い時  超え\n[03:21.58]見下ろす景色は\n[03:26.89]空に光った  どんな星より\n[03:32.64]優しさ満ちる街明かり\n[03:47.11]どれだけの季節超えても\n[03:52.04]いつでもそこに灯る\n[03:57.83]さよならをする  その痛みさえ\n[04:03.53]僕らを形作るなら\n[04:09.92]紡がれた物語は今\n[04:15.01]終わりを迎え\n[04:17.97]春へ  解けてゆく\n[04:31.86]帰ろう  ほら\n[04:37.85]町は  今日も…\n',
-			theme: '#f7f6f1'
-		},
-		{
-			name: '陽だまり道',
-			artist: '水谷広実',
-			url: 'https://nekolr.com/avalon/audio/陽だまり道.mp3',
-			cover: 'https://p1.music.126.net/D2uWvpimbih70JZgNdRgmg==/5823013580839602.jpg?param=130y130',
-			theme: '#75ceec'
-		},
-		{
-			name: 'you',
-			artist: 'M.Graveyard',
-			url: 'https://nekolr.com/avalon/audio/you.mp3',
-			cover: 'https://p1.music.126.net/v22kNtMro7CvzoiCYJ4zjQ==/3315027558990599.jpg?param=130y130',
-			theme: '#f6f6dc'
-		},
-		{
-			name: 'A LETTER ＜nZK Ver.＞',
-			artist: 'Cyua',
-			url: 'https://nekolr.com/avalon/audio/A_LETTER.mp3',
-			cover: 'https://p1.music.126.net/cGpQM5tQzJQJfAAfjgKFWA==/6023124697347234.jpg?param=130y130',
-			lrc: "[00:20.500]All my friends have gone away\n[00:24.110]I need myself to sing this song\n[00:28.050]But you always passed away\n[00:32.020]But It seems to be okay\n[00:36.550]All my wish and powers\n[00:40.070]They would take me to the gate\n[00:44.000]Should I really find my problem ?\n[00:48.000]Do I really want to know about ?\n[00:52.080]I'm writing a letter for me\n[00:55.990]Is there anything I would say ?\n[01:02.560]I don't have to throw my life away\n[01:10.530]Everything goes wrong to turn into the way of life\n[01:18.470]This could take so long to find the way\n[01:26.040]All those people cry in vain\n[01:30.020]Now I see the light in pain\n[01:34.030]I can find the way of love...\n[01:40.620]\n[02:30.650]You don't have to throw your life away\n[02:38.550]Everything goes wrong to turn into the way of life\n[02:46.560]This could take so long to find the way\n[02:54.070]All those people cry in vain\n[02:58.000]Now you see the light in pain\n[03:03.610]\n[03:20.510]Say goodbye to the perfect sky\n[03:27.030]But it's your love can be the real life line\n[03:38.860]\n[100:39.990]\n",
-			theme: '#161616'
-		}]
+		audio: audios
 	});
 </script>
 </body>
