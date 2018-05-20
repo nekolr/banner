@@ -2,4 +2,4 @@
 A banner with something else
 
 # preview
-![preview](https://i.v2ex.co/IRe645iN.png)
+![preview](https://github.com/nekolr/banner/blob/master/images/IRe645iN.png)
