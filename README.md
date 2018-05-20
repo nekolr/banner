@@ -4,6 +4,9 @@ A banner with something else
 # preview
 ![preview](https://github.com/nekolr/banner/blob/master/images/IRe645iN.png)
 
+# todo
+- [ ] add live2d model switch
+
 # thanks
 
 - [pixiv: ArseniXC](https://www.pixiv.net/member.php?id=202175)
