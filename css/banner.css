@@ -13,7 +13,8 @@ body {
 .banner-view{
 	position: relative;
 	height: 100%;
-	z-index: 999;
+	/* z-index: 999; */
+	z-index: 1;
 	background-color: #090b22;
 	background-repeat: no-repeat;
 }
@@ -78,7 +79,8 @@ body {
 	position: absolute;
 	bottom: 0;
 	height: 3px;
-	z-index: 1000;
+	/* z-index: 1000; */
+	z-index: 1;
 }
 .banner-progres i{
 	position: absolute;
