@@ -6,6 +6,7 @@ A banner with something else
 
 # todo
 - [ ] add live2d model switch
+- [ ] AI support
 
 # thanks
 
